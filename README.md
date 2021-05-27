@@ -1,8 +1,8 @@
 - 👋 Hi, I’m @teddymwai
 - 👀 I’m interested in Cybersecurity.
 - 👀 With a touch of networking!
-- 🌱 I’m currhttps://twitter.com/_teddymwaiently learning Penetration Testing.
-- 💞️ I’m lookhttps://twitter.com/_teddymwaiing to collaborate.
+- 🌱 I’m currently learning Penetration Testing.
+- 💞️ I’m looking to collaborate.
 - 📫 How to reach me: https://twitter.com/_teddymwai
 
 <!---
