@@ -1,0 +1,195 @@
+{
+  "schema_version": "1.0.0",
+  "identity": {
+    "name": "Ted Mwai",
+    "legal": "Thaddeus (Ted) Wachira Mwai",
+    "role": "Principal, Edulis Secure Systems Hub Limited",
+    "positioning": "Security assurance  ·  AI risk governance  ·  High-assurance engineering tooling",
+    "location": "Nairobi  ·  Murang'a, Kenya",
+    "summary": "Security assurance engineer, AI risk strategist and principal of **Edulis Secure Systems Hub Limited**. I build high-assurance verification tooling: find the systemic cause, eliminate the defect class at the root, and keep it fixed with automated guardrails.",
+    "current": [
+      "QA Team Lead and AI & Risk Ambassador at **CYBER RANGES**",
+      "Security monitoring and platform integration consulting at **Silensec Africa**",
+      "Author and editor of **TedCraft**, the engineering ledger of Edulis SSH"
+    ]
+  },
+  "edulis": {
+    "name": "Edulis Secure Systems Hub Limited",
+    "short": "Edulis SSH",
+    "mission": "A high-assurance systems verification, access governance and security engineering studio, operating from Kenya for global infrastructure.",
+    "origin": "Named for *mahiinga* (*Canna edulis*), the highland plant of Kandara in Murang'a. Its signet is a shoot caught breaking ground from the rhizome: growth made visible, security expressed through composure rather than padlocks. **SSH** nods to Secure Shell: disciplined, encrypted, wire-level engineering.",
+    "pillars": [
+      ["Systems verification", "Contract-first test harnesses, wire-level evidence, zero-regression release gates."],
+      ["Access governance", "Least-privilege RBAC, automated access reviews, revocation-latency analysis."],
+      ["Security engineering", "Stdlib-first security tooling, threat emulation, AI risk evaluation."]
+    ],
+    "publication": {
+      "name": "TedCraft",
+      "url": "https://tedcraft.dev",
+      "line": "TedCraft, a publication of Edulis Secure Systems Hub Limited"
+    }
+  },
+  "lanes": {
+    "shipped": {"index": "01", "eyebrow": "PAST", "title": "Shipped", "blurb": "Delivered systems and tools, with the evidence to back them."},
+    "inflight": {"index": "02", "eyebrow": "PRESENT", "title": "In Flight", "blurb": "Active builds and standing responsibilities."},
+    "horizon": {"index": "03", "eyebrow": "FUTURE", "title": "On the Horizon", "blurb": "Committed next work, staged behind the same gates."}
+  },
+  "private_repos": ["TedCraft", "TedRedCraft", "RangeMaster-Cockpit", "antigravity-core-template", "vsconline"],
+  "works": [
+    {
+      "id": "unnest-studio", "lane": "shipped", "title": "Unnest Studio", "year": 2026, "version": "v2.1.0", "status": "PUBLIC",
+      "tagline": "Privacy-first streaming JSON to CSV / Excel studio. Two-pass schema discovery, O(1) memory per record, zero bytes leave the machine.",
+      "stack": ["Python", "JavaScript"],
+      "links": {"Repo": "https://github.com/teddymwai/unnest-studio", "Demo": "https://teddymwai.github.io/unnest-studio/", "Dossier": "https://tedcraft.dev/works/unnest-studio/"}
+    },
+    {
+      "id": "nice-framework-mapper", "lane": "shipped", "title": "NIST NICE Framework Mapper", "year": 2025, "status": "PUBLIC",
+      "tagline": "Maps scenario telemetry and assessment artefacts to NIST NICE (SP 800-181r1) work roles and KSAs, entirely client-side.",
+      "stack": ["Python", "JavaScript"],
+      "links": {"Repo": "https://github.com/teddymwai/nice-framework-mapper", "Demo": "https://teddymwai.github.io/nice-framework-mapper/", "Dossier": "https://tedcraft.dev/works/nice-framework-mapper/"}
+    },
+    {
+      "id": "rangemaster-cockpit", "lane": "shipped", "title": "RangeMaster Cockpit", "year": 2025, "version": "v1.4.0", "status": "PRIVATE",
+      "tagline": "Operator panel for HAR-driven wire-contract verification, Playwright agents, and mutation interlocks.",
+      "stack": ["Python", "Playwright", "OpenStack"],
+      "links": {"Dossier": "https://tedcraft.dev/works/rangemaster-cockpit/"}
+    },
+    {
+      "id": "resilient-orchestrator", "lane": "shipped", "title": "GitLab Resilient Orchestrator", "year": 2026, "status": "PUBLIC",
+      "tagline": "Fault-tolerant bulk provisioning, staging promotion and MR lifecycle across 43 repositories. 0 conflicts, standard library only, jittered backoff.",
+      "stack": ["Python", "GitLab API"],
+      "links": {"GitLab": "https://gitlab.com/teddymwai/gitlab-resilient-orchestrator", "Dossier": "https://tedcraft.dev/works/resilient-orchestrator/"}
+    },
+    {
+      "id": "practitioner-curriculum", "lane": "shipped", "title": "Practitioner & Agentic AI Curriculum", "year": 2026, "status": "PUBLIC",
+      "tagline": "43 standalone repositories across 4 tiers: systems programming, wire-protocol analysis and MCP-conforming Hackbot / Defense agents.",
+      "stack": ["C++20", "Rust", "Go", "Zig"],
+      "links": {"GitLab": "https://gitlab.com/teddymwai", "Dossier": "https://tedcraft.dev/works/cybersecurity-courses-curriculum/"}
+    },
+    {
+      "id": "threat-emulation", "lane": "shipped", "title": "Threat-eX Simulation Scenarios", "year": 2026, "status": "CASE STUDY",
+      "tagline": "Industrial control (SCADA / ICS) and ransomware threat-emulation scenarios with zero host egress.",
+      "stack": ["SCADA / ICS", "MITRE ATT&CK"],
+      "links": {"Dossier": "https://tedcraft.dev/works/threat-emulation-scenarios/"}
+    },
+    {
+      "id": "speedmynet", "lane": "shipped", "title": "SpeedMyNet", "year": 2026, "status": "PUBLIC",
+      "tagline": "Bandwidth, bufferbloat and latency profiler with operator GUI. +/-0.4 ms precision in a 6.2 MB binary.",
+      "stack": ["Go", "WebSockets"],
+      "links": {"GitLab": "https://gitlab.com/teddymwai/speedmynet", "Dossier": "https://tedcraft.dev/works/speed-my-net/"}
+    },
+    {
+      "id": "markdown-studio", "lane": "shipped", "title": "In-Browser Markdown Studio", "year": 2026, "status": "CASE STUDY",
+      "tagline": "Offline-first documentation workspace: under 4 ms input-to-paint on 10,000-line documents.",
+      "stack": ["TypeScript", "Web Workers"],
+      "links": {"Dossier": "https://tedcraft.dev/works/markdown-viewer/"}
+    },
+    {
+      "id": "uam-review-engine", "lane": "shipped", "title": "UAM Access Review Engine", "year": 2024, "status": "CASE STUDY",
+      "tagline": "Access-review automation that cut quarterly reviews from 17 days to 13 business hours and surfaced privilege-revocation exposure windows.",
+      "stack": ["Python", "RBAC", "SIEM"],
+      "links": {"Dossier": "https://tedcraft.dev/works/uam-access-review-engine/"}
+    },
+    {
+      "id": "yara-waf", "lane": "shipped", "title": "Cloud WAF & Threat Engine", "status": "ARCHIVE",
+      "tagline": "Custom YARA inspection rules over AWS IAM APIs; 98% true-positive rate. KamiLimu Innovation Project winner.",
+      "stack": ["AWS", "YARA"],
+      "links": {}
+    },
+    {
+      "id": "iot-ids", "lane": "shipped", "title": "IoT Intrusion Detection", "status": "ARCHIVE",
+      "tagline": "Lightweight network IDS nodes for embedded device clusters; 94% attack classification accuracy.",
+      "stack": ["Python", "Networking"],
+      "links": {}
+    },
+    {
+      "id": "tedcraft", "lane": "inflight", "title": "TedCraft", "status": "PRIVATE",
+      "tagline": "The Edulis SSH engineering ledger: works dossiers, Learning Curves post-mortems and field dispatches.",
+      "stack": ["Astro", "MDX"],
+      "links": {"Site": "https://tedcraft.dev"}
+    },
+    {
+      "id": "tedredcraft", "lane": "inflight", "title": "TedRedCraft", "status": "PRIVATE",
+      "tagline": "Standard-library security harness: polyglot SAST, loopback DAST, adversarial review and UltraRed run reporting.",
+      "stack": ["Python"],
+      "links": {}
+    },
+    {
+      "id": "core-harness", "lane": "inflight", "title": "Antigravity Core Harness", "status": "PRIVATE",
+      "tagline": "Autonomous engineering harness: closed-loop verification, 7-check commit gate, Lagopus releases and the unslop UI system. This profile runs on it.",
+      "stack": ["Python", "Bash"],
+      "links": {}
+    },
+    {
+      "id": "edulis-signet", "lane": "inflight", "title": "Edulis Unified Signet V3.2B-1", "status": "IN PROGRESS",
+      "tagline": "Three-resolution brand mark, two-ring official seal and institutional charter for Edulis SSH.",
+      "stack": ["SVG", "Brand Systems"],
+      "links": {}
+    },
+    {
+      "id": "ai-risk-pipeline", "lane": "inflight", "title": "AI Risk Intelligence Pipeline", "status": "ROLE",
+      "tagline": "Departmental AI risk intelligence pipeline at CYBER RANGES, ranking active risk scenarios into an executive mitigation roadmap.",
+      "stack": ["AI Governance", "GRC"],
+      "links": {}
+    },
+    {
+      "id": "gitlab-pipeline-expansion", "lane": "horizon", "title": "GitLab Security & Systems Drops", "status": "PLANNED",
+      "tagline": "More open-source security tooling, systems labs, and practitioner modules queued for publication on GitLab.",
+      "stack": ["Systems", "Security"],
+      "links": {"GitLab": "https://gitlab.com/teddymwai"}
+    },
+    {
+      "id": "rangemaster-public", "lane": "horizon", "title": "RangeMaster Cockpit, Public Edition", "status": "PLANNED",
+      "tagline": "Sanitized demonstration edition with a mock server and fixtures, so the harness can be explored without client infrastructure.",
+      "stack": ["Python"],
+      "links": {}
+    },
+    {
+      "id": "md-extension", "lane": "horizon", "title": "Markdown Studio Extension", "status": "PLANNED",
+      "tagline": "Manifest V3 browser extension that renders local and remote Markdown in-tab, fully offline.",
+      "stack": ["TypeScript", "Chrome MV3"],
+      "links": {}
+    },
+    {
+      "id": "cloud-agent-orchestrator", "lane": "horizon", "title": "Cloud Agent Orchestrator", "status": "PLANNED",
+      "tagline": "Template-driven runner that provisions and verifies cloud lab templates in bulk.",
+      "stack": ["Python"],
+      "links": {}
+    },
+    {
+      "id": "redcraft-public", "lane": "horizon", "title": "TedRedCraft Skill Pack", "status": "PLANNED",
+      "tagline": "Public release of the portable security skill pack and UltraRed reporting engine.",
+      "stack": ["Python"],
+      "links": {}
+    },
+    {
+      "id": "edulis-advisory", "lane": "horizon", "title": "Edulis SSH Advisory", "status": "PLANNED",
+      "tagline": "Selective, high-trust verification and access-governance engagements under Edulis Secure Systems Hub Limited.",
+      "stack": ["Advisory"],
+      "links": {}
+    }
+  ],
+  "method": [
+    ["Closed-loop verification", "Every change ships with the probe that proves it; no visual inspection as evidence."],
+    ["Standard library first", "Zero-dependency Python tooling wherever the platform allows."],
+    ["Contracts before code", "Proposals triaged ADOPT / REJECT / HOLD; the CLI is always the first consumer."],
+    ["Lagopus release lineage", "SemVer paired with ptarmigan taxonomy, recorded in a release register."],
+    ["7-check commit gate", "Explicit staging, compile, self-test, contract tests, SAST and secret scans before every commit."],
+    ["Unslop interfaces", "Zero emoji, quiet chrome, a 4px grid and Apple HIG ergonomics."]
+  ],
+  "credentials": [
+    "ISTQB Certified Tester, Foundation Level",
+    "LPIC-1 Linux Administrator",
+    "MITRE ATT&CK Fundamentals",
+    "Microsoft Certified: Azure Fundamentals",
+    "Huntress CTF 2025: 60+ challenges"
+  ],
+  "beyond": "Scuderia Ferrari tifoso. KamiLimu mentor. Responsible-AI workshops for 30+ engineers with Mozilla Foundation programmes. Hakuna Matata.",
+  "links": [
+    ["TedCraft", "https://tedcraft.dev"],
+    ["LinkedIn", "https://www.linkedin.com/in/teddymwai/"],
+    ["GitHub", "https://github.com/teddymwai"],
+    ["GitLab", "https://gitlab.com/teddymwai"]
+  ],
+  "feed": {"url": "https://tedcraft.dev/rss.xml", "limit": 4}
+}
