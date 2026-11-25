@@ -2,7 +2,7 @@ name: Mirror to GitLab
 
 on:
   push:
-    branches: [main, staging]
+    branches: [main]
     tags: ["Lagopus*"]
   workflow_dispatch:
 
@@ -13,12 +13,10 @@ jobs:
   mirror:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout full history
+      - name: Checkout GitHub repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
-      - name: Push to GitLab mirror
+      - name: Sync working tree to SHA-256 GitLab repository
         env:
           GITLAB_PUSH_TOKEN: ${{ secrets.GITLAB_PUSH_TOKEN }}
         run: |
@@ -26,6 +24,17 @@ jobs:
             echo "GITLAB_PUSH_TOKEN secret is not configured; skipping GitLab mirror."
             exit 0
           fi
-          git remote add gitlab "https://oauth2:${GITLAB_PUSH_TOKEN}@gitlab.com/teddymwai/teddymwai.git"
-          git push gitlab "HEAD:refs/heads/${GITHUB_REF_NAME}" --follow-tags || true
-          git push gitlab --tags
+          git clone "https://oauth2:${GITLAB_PUSH_TOKEN}@gitlab.com/teddymwai/teddymwai.git" /tmp/gitlab-mirror
+          rsync -a --delete --exclude='.git' ./ /tmp/gitlab-mirror/
+          cd /tmp/gitlab-mirror
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(mirror): sync from github.com/teddymwai/teddymwai (${GITHUB_SHA::7})"
+            git push origin main
+          fi
+          if [[ "${GITHUB_REF}" == refs/tags/Lagopus* ]]; then
+            git tag -f "${GITHUB_REF_NAME}" -m "Mirrored from GitHub ${GITHUB_REF_NAME}"
+            git push origin "refs/tags/${GITHUB_REF_NAME}"
+          fi
