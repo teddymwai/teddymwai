@@ -122,7 +122,7 @@ Editorial ledger: [TedCraft, a publication of Edulis Secure Systems Hub Limited]
 - Microsoft Certified: Azure Fundamentals
 - Huntress CTF 2025: 60+ challenges
 
-**Beyond the terminal:** Scuderia Ferrari tifoso. KamiLimu 6.0 mentee. KamiLimu 7.0 technical mentor.
+**Beyond the terminal:** Scuderia Ferrari tifoso. KamiLimu 6.0 mentee. KamiLimu 7.0 technical mentor.  
 Hakuna Matata.
 <!-- END:credentials -->
 
