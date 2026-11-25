@@ -1,0 +1,31 @@
+name: Mirror to GitLab
+
+on:
+  push:
+    branches: [main, staging]
+    tags: ["Lagopus*"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout full history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Push to GitLab mirror
+        env:
+          GITLAB_PUSH_TOKEN: ${{ secrets.GITLAB_PUSH_TOKEN }}
+        run: |
+          if [ -z "$GITLAB_PUSH_TOKEN" ]; then
+            echo "GITLAB_PUSH_TOKEN secret is not configured; skipping GitLab mirror."
+            exit 0
+          fi
+          git remote add gitlab "https://oauth2:${GITLAB_PUSH_TOKEN}@gitlab.com/teddymwai/teddymwai.git"
+          git push gitlab "HEAD:refs/heads/${GITHUB_REF_NAME}" --follow-tags || true
+          git push gitlab --tags
